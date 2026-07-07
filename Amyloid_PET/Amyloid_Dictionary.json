@@ -1,0 +1,15 @@
+{
+  "Subject": "PTID",
+  "Image_ID_T1": "IMAGE_ID_T1",
+  "Image_ID_Abeta": "IMAGE_ID_AMYLOID_PET",
+  "T1_Date": "T1_DATE",
+  "Abeta_date": "AMYLOID_PET_DATE",
+  "Frontal_SUVR": "FRONTAL_SUVR",
+  "Lateral_Parietal_SUVR": "LATERAL_PARIETAL_SUVR",
+  "Lateral_Temporal_SUVR": "LATERAL_TEMPORAL_SUVR",
+  "APCC_SUVR": "APCC_SUVR",
+  "Composite_SUVR": "COMPOSITE_SUVR",
+  "Amyloid_Status": "AMYLOID_STATUS",
+  "Interval_Abeta (months)": "Interval_Abeta (months)",
+  "Interval_Tau (months)": "Interval_Tau (months)"
+}
