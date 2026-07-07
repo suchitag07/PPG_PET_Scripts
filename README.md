@@ -7,7 +7,6 @@
 								OVERVIEW OF PPG PET PIPELINE SCRIPTS
 =========================================================================================================
 ## Scripts																			# Purpose
- /cfs/loni/faculty/ipappas/pappaslab/suchita/PPG/ 
 ├── Scripts/                                    
 │   	└── PET_Latest/
 │			   │ 
