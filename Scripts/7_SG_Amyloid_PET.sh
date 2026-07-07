@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#NAME: Suchita Ganesan, Ioannis Pappas
+#NAME: Ioannis Pappas, Suchita Ganesan
 #DATE CREATED: August 13th, 2024
 
 #$ -N Amyloid_PET              
