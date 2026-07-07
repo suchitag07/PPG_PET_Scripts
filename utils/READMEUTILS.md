@@ -2,19 +2,19 @@
 
 ## INTRODUCTION
 
-**PET_CSV_Wrangling** is a module (located here: `/cfs/loni/faculty/ipappas/pappaslab/suchita/PPG/Scripts/PET_Latest/utils`). It contains all key functions necessary for processing the RAW IDA data sheet. We utilize these functions to identify which PET-T1 scans match up and are available to process. These functions are imported and used under the alias `execute` inside the script ***`/cfs/loni/faculty/ipappas/pappaslab/suchita/PPG/Scripts/PET_Latest/2_Process_PET_CSVs.py`***
+**PET_CSV_Wrangling** is a module (located here: `utils`). It contains all key functions necessary for processing the RAW IDA data sheet. We utilize these functions to identify which PET-T1 scans match up and are available to process. These functions are imported and used under the alias `execute` inside the script ***`2_Process_PET_CSVs.py`***
 
 This section explains each function called in `2_Process_PET_CSVs.py`, step by step.
 
 **This information is relevant IF:**
-- If you are running into major errors with ***`/cfs/loni/faculty/ipappas/pappaslab/suchita/PPG/Scripts/PET_Latest/2_Process_PET_CSVs.py`***
+- If you are running into major errors with ***`2_Process_PET_CSVs.py`***
 - If you want to revise any functions here to keep up with changes in IDA metadata format (changes in reported column names, IMAGE ID format, or Subject ID format). 
 
 ---
 
 ### IMPORTANT
 
-**The core logic in these functions should not be edited.** This is because the pipeline selects and organizes subjects and IMAGE IDs based on what already exists inside the this directory (`/cfs/loni/faculty/ipappas/pappaslab/suchita/PPG`).
+**The core logic in these functions should not be edited.** This is because the pipeline selects and organizes subjects and IMAGE IDs based on what already exists inside the this folder (`PPG`).
 
 **A key detail: Sometimes the IDA will contain duplicate scans under the same subject and timepoint, but with different IMAGE IDs. This can lead to discrepancies, especially if an existing subject/timepoint is later reprocessed with different IMAGE IDs across data pulls.  
 For subjects already processed, my code matches and uses the same IMAGE ID when new IDA CSVs are downloaded, preventing accidental reprocessing of an old subject/timepoint under a new IMAGE ID.**
@@ -24,7 +24,7 @@ This logic—maintaining IMAGE ID consistency and preventing unwanted reprocessi
 - `1_Check_Inventory.py`
 - PET_CSV_Wrangling.py Module functions: `update_status` and `pair_imaging`
 ```
-**If you want to change any core functions/adapt these scripts differently, please make your dedicated scripts in a separate user directory and discontinue all processing for the Amyloid and Tau data under `/cfs/loni/faculty/ipappas/pappaslab/suchita/PPG` ). Update reports accordingly.**
+**If you want to change any core functions/adapt these scripts differently, please make your dedicated scripts in a separate user directory and discontinue all processing for the Amyloid and Tau data under `PPG` ). Update reports accordingly.**
 
 ---
 
